@@ -1,0 +1,9 @@
+{
+	"name": "movieql",
+	"version": "1.0.0",
+	"description": "movie API with Graphal https://nomadcoders.co/graphql-for-beginners",
+	"main": "index.js",
+	"respository": "https://github.com/baedorazy/movieql",
+	"author": "baedorazy",
+	"license": "MIT"
+}
