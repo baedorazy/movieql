@@ -225,3 +225,36 @@ query {
 ```
 
 
+
+# [#STEP3] DETAIL
+- db.js 추가
+- schema.graphql
+``` 
+    - Query person 추가
+    - type Person에 id : Int! 필수값 id추가
+    - db.js object에 id integer값 추가 후 export.
+```
+- resolvers.js 수정
+```
+    - import { people, getById } from './db'추가
+    - reesolvers에 person: getId(_, {id }) => { return getById(id) } 추가
+```
+- db.js 
+```
+    위쪽 people object 생성.
+    getById = id => filterPeople = people.filter( people => people.id === id);
+    리턴해줌 filterPeople
+```
+- 그래프QL 스키마 수정되면 nodemon이 인식을 못해서 새로고침
+```
+    $ yarn start
+```
+- localhost:4000
+```
+query {
+  person(id: 10) {
+    name
+    age
+  }
+}
+```

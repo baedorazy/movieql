@@ -1,25 +1,25 @@
 export const people = [
 	{
 		id: 1,
-			name : 'baezzy',
+		name : 'baezzy',
 		age: 36,
 		gender : 'female'
 	},
 	{
 		id: 2,
-			name : 'hoi',
+		name : 'hoi',
 		age: 36,
 		gender : 'male'
 	},
 	{
 		id: 3,
-			name : 'hyuni',
+		name : 'hyuni',
 		age: 38,
 		gender : 'female'
 	},
 	{
 		id: 4,
-			name : 'bong2',
+		name : 'bong2',
 		age: 35,
 		gender : 'male'
 	}
