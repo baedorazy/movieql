@@ -1,13 +1,11 @@
-const baezzy = {
-	name : 'baezzy',
-	age: 26,
-	gender : 'female'
-}
+import { people, getById } from './db';
 
-// 아래 코드와 동일하지만 shortcut
 const resolvers = {
 	Query: {
-		person: () => baezzy
+		people: () => people,
+		person: (_, { id }) => {
+			return getById(id);
+		}
 	}
 };
 
